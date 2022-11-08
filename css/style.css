@@ -1,0 +1,13 @@
+ul{
+    list-style-type:none;
+    display:flex;
+    justify-content: center;
+  
+  }
+  ul li{
+    display: list-item;
+    background: black;
+    padding: 5px 10px;
+    color:white;
+    margin: 0 3px;
+  }

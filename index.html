@@ -10,12 +10,14 @@
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <!-- Vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Vue Email List</title>
 </head>
 <body>
-    <div class="container pt-5" id="app">
+    <div class="container pt-5 " id="app">
         <h1>Vue Email List</h1>
-        <ol v-if="valoreApi.length >= 10">
-            <li v-for="(obj, index) in valoreApi" key="index">
+        <button class="btn btn-primary" @click="callApi">Stampa</button>
+        <ol v-if="valoreApi.length >= 10" class="list-group list-group-numbered pt-2 col-md-3">
+            <li v-for="(obj, index) in valoreApi" key="index" class="list-group-item list-group-item-action" >
                 {{obj}}
             </li> 
         </ol>
