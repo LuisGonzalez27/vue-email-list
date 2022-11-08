@@ -15,6 +15,9 @@ createApp({
         }
     },
     created(){
-        this.callApi();
+        // chiamo 10 volte la funzione
+        for(let i=0; i <10; i++){
+            this.callApi();
+        }
     }
 }).mount('#app');
